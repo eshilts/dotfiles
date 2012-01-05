@@ -1,0 +1,4 @@
+dotfiles -- settings for vim, bash, etc
+
+To do:
+-Add script to setup links to these files assuming dotfiles is located in $workspace
