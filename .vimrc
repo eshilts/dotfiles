@@ -98,3 +98,8 @@ set expandtab
 autocmd FileType xml setlocal shiftwidth=2 tabstop=2
 autocmd FileType js setlocal shiftwidth=2 tabstop=2
 
+au BufNewFile,BufRead *.R set filetype=r
+au BufNewFile,BufRead *.r set filetype=r
+
+" Turn off underscore to R assignment operator insertion ( _ to <- )
+let vimrplugin_underscore = 0
