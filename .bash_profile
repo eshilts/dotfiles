@@ -22,6 +22,12 @@ alias lu='ls -ltur'        # sort by and show access time, most recent last
 # - opower servers
 alias biin001='ssh biin001.va.opower.it'
 alias biin='biin001'
+# - R related
+alias R='R --no-save --no-restore-data --quiet'
 
 # Find a file with a pattern in name:
 function ff() { find . -type f -iname '*'$*'*' -ls ; }
+
+# Join pdfs into single file using:
+# joinPDF.py -o output_file.pdf input1_file.pdf input2_file.pdf
+#ln -s /System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py joinPDF.py
