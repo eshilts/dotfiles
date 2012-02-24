@@ -1,10 +1,13 @@
 source ~/.bashrc
+export PS1="\h:\w$ "
 export CLICOLOR=1
+export workspace=~/workspace
 
 # useful aliases
 # - git
 alias ga='git add'
 alias gc='git commit -m'
+alias gca='git commit -am'
 alias gs='git status'
 alias gpgm='git push github master'
 alias gpom='git push opower master'
