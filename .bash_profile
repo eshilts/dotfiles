@@ -34,3 +34,5 @@ function ff() { find . -type f -iname '*'$*'*' -ls ; }
 # Join pdfs into single file using:
 # joinPDF.py -o output_file.pdf input1_file.pdf input2_file.pdf
 #ln -s /System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py joinPDF.py
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

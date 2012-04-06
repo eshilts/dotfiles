@@ -103,3 +103,5 @@ au BufNewFile,BufRead *.r set filetype=r
 
 " Turn off underscore to R assignment operator insertion ( _ to <- )
 let vimrplugin_underscore = 0
+
+colorscheme autumn2
