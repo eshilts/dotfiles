@@ -106,3 +106,8 @@ let vimrplugin_underscore = 0
 let vimrplugin_term_cmd = "xterm"
 
 colorscheme autumn2
+
+set nocompatible
+syntax enable
+filetype plugin on
+filetype indent on
