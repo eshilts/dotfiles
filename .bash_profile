@@ -1,5 +1,5 @@
 source ~/.bashrc
-export PS1="\h:\w$ "
+#export PS1="\h:\w$ "
 export CLICOLOR=1
 export workspace=~/workspace
 
