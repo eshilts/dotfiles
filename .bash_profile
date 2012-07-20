@@ -23,6 +23,9 @@ PROMPT_WHITE="\[\033[0;37m\]"
 GIT_MASTER_COLOR=$PROMPT_CYAN
 GIT_BRANCH_COLOR=$PROMPT_RED
 
+# Source git completion and prompt stuff
+source ~/.git-completion.bash
+source ~/.git-prompt.sh
 # Source .bashrc which sources pose.bash
 source ~/.bashrc
 export CLICOLOR=1
