@@ -52,6 +52,19 @@ function command_exists() {
     command -v "$1" &> /dev/null
 }
 
+GIT_MASTER_COLOR=$PROMPT_CYAN
+GIT_BRANCH_COLOR=$PROMPT_RED
+
+SVN_TRUNK_COLOR_DEFAULT=$PROMPT_YELLOW
+SVN_BRANCH_COLOR_DEFAULT=$PROMPT_GREEN
+GIT_MASTER_COLOR_DEFAULT=$PROMPT_YELLOW
+GIT_BRANCH_COLOR_DEFAULT=$PROMPT_GREEN
+
+SVN_TRUNK_COLOR=${SVN_TRUNK_COLOR:-$SVN_TRUNK_COLOR_DEFAULT}
+SVN_BRANCH_COLOR=${SVN_BRANCH_COLOR:-$SVN_BRANCH_COLOR_DEFAULT}
+GIT_MASTER_COLOR=${GIT_MASTER_COLOR:-$GIT_MASTER_COLOR_DEFAULT}
+GIT_BRANCH_COLOR=${GIT_BRANCH_COLOR:-$GIT_BRANCH_COLOR_DEFAULT}
+
 function spwd() {
     stat .svn > /dev/null 2>&1
     if [ "$?" == "0" ]; then
@@ -60,10 +73,10 @@ function spwd() {
             SVER=`echo ${SURL} | perl -pe 's{.*/(branches|tags)/(.*)}{\1/\2}' | cut -d/ -f1-2`
             SPTH=`echo ${SURL} | perl -pe 's{.*svnroot/(.*)/(branches|tags)/.*}{/\1}'`
             SPWD="${SPTH}/${SVER}"
-            SCL=$PROMPT_GREEN
+            SCL=$SVN_BRANCH_COLOR
         else
             SPWD=`echo ${SURL} | perl -pe 's{.*svnroot/(.*)/trunk(.*)}{/\1/trunk}'`
-            SCL=$PROMPT_YELLOW
+            SCL=$SVN_TRUNK_COLOR
         fi
         export PS1="${PROMPT_YELLOW}\u:\w ${SCL}[SVN: $SPWD]\n${PROMPT_YELLOW}$ ${PROMPT_NO_COLOR}"
     # Requires git-completion.bash to do anything useful.
@@ -71,9 +84,9 @@ function spwd() {
 	GITBRANCH=`__git_ps1 "%s"`
 	if [[ "${GITBRANCH}" != "" ]]; then
     if [[ "${GITBRANCH}" == "master" ]]; then
-      export PS1="${PROMPT_CYAN}\u:\w [git: $GITBRANCH] $ ${PROMPT_NO_COLOR}"
+      export PS1="\u:\w ${GIT_MASTER_COLOR}[git: $GITBRANCH]${PROMPT_NO_COLOR} $ "
     else 
-      export PS1="${PROMPT_RED}\u:\w [git: $GITBRANCH] $ ${PROMPT_NO_COLOR}"
+      export PS1="\u:\w ${GIT_BRANCH_COLOR}[git: $GITBRANCH]${PROMPT_NO_COLOR} $ "
     fi
 	else
 	    export PS1="\u:\w $ "
