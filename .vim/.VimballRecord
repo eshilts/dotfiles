@@ -1,1 +1,2 @@
 screen.vba: call delete('/Users/erikshilts/.vim/autoload/screen.vim')|call delete('/Users/erikshilts/.vim/doc/screen.txt')|call delete('/Users/erikshilts/.vim/plugin/screen.vim')
+markdown-1.2.2.vba: call delete('/Users/erikshilts/.vim/ftdetect/markdown.vim')|call delete('/Users/erikshilts/.vim/snippets/markdown.snippets')|call delete('/Users/erikshilts/.vim/syntax/markdown.vim')
