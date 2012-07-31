@@ -20,8 +20,8 @@ PROMPT_TEAL="\[\033[0;36m\]"
 PROMPT_WHITE="\[\033[0;37m\]"
 
 # Set my custom Git colors
-GIT_MASTER_COLOR=$PROMPT_CYAN
-GIT_BRANCH_COLOR=$PROMPT_RED
+GIT_MASTER_COLOR=$PROMPT_RED
+GIT_BRANCH_COLOR=$PROMPT_CYAN
 
 # Source git completion and prompt stuff
 source ~/.git-completion.bash
