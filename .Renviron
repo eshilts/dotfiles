@@ -1,0 +1,2 @@
+#.Renviron
+R_LIBS = '~/.R/library'
