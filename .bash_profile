@@ -32,7 +32,7 @@ export CLICOLOR=1
 export workspace=~/workspace
 
 # useful aliases
-# - vim
+# - Mac vim
 alias vi='mvim -v'
 # - git
 alias ga='git add'
