@@ -101,6 +101,9 @@ autocmd FileType js setlocal shiftwidth=2 tabstop=2
 au BufNewFile,BufRead *.R set filetype=r
 au BufNewFile,BufRead *.r set filetype=r
 
+au BufNewFile,BufRead Gemfile set filetype=ruby
+au BufNewFile,BufRead Guardfile set filetype=ruby
+
 " Turn off underscore to R assignment operator insertion ( _ to <- )
 let vimrplugin_underscore = 0
 let vimrplugin_term_cmd = "xterm"

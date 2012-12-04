@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/erikshilts/workspace/peak-savings/lib/peaksavings'
+let g:netrw_dirhist_2='/Users/erikshilts/workspace/peak-savings/lib'
+let g:netrw_dirhist_3='/Users/erikshilts/workspace/bumblebee/app/views/expenses'
+let g:netrw_dirhist_4='/Users/erikshilts/workspace/peak-savings/templates'
+let g:netrw_dirhist_5='/Users/erikshilts/workspace/peak-savings/lib/peaksavings'
+let g:netrw_dirhist_6='/Users/erikshilts/workspace/peak-savings/lib'

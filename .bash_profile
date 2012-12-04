@@ -32,6 +32,8 @@ export CLICOLOR=1
 export workspace=~/workspace
 
 # useful aliases
+# - vim
+alias vi='mvim -v'
 # - git
 alias ga='git add'
 alias gc='git commit -m'
@@ -39,6 +41,8 @@ alias gca='git commit -am'
 alias gs='git status'
 alias gpgm='git push github master'
 alias gpom='git push opower master'
+alias git_opower='git config --global user.name eshilts; git config --global user.email erik.shilts@opower.com'
+alias git_personal='git config --global user.name eshilts; git config --global user.email erik.shilts@gmail.com'
 # - programs
 alias octave='exec /Applications/Octave.app/Contents/Resources/bin/octave'
 # - Moving around
