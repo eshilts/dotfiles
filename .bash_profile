@@ -30,6 +30,7 @@ source ~/.git-prompt.sh
 source ~/.bashrc
 export CLICOLOR=1
 export workspace=~/workspace
+export kaggle=$workspace/kaggle
 
 # useful aliases
 # - Mac vim

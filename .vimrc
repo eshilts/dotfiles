@@ -114,3 +114,6 @@ set nocompatible
 syntax enable
 filetype plugin on
 filetype indent on
+
+set colorcolumn=80
+highlight ColorColumn ctermbg=grey guibg=grey
