@@ -62,3 +62,8 @@ alias R='R --no-save --no-restore-data --quiet'
 function ff() { find . -type f -iname '*'$*'*' -ls ; }
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# Setting PATH for EPD_free-7.3-2
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:${PATH}"
+export PATH
